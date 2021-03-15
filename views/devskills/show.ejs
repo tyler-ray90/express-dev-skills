@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dev Skills</title>
+	</head>
+	<body>
+			
+			  <form action="/devskills/<%= devskillNum - 1 %>?_method=DELETE"
+				class="delete-form" method="POST">
+				<button type="submit">X</button>
+			  </form>
+			
+
+		<div class="container">
+			<div class="nav">
+				<a href="/">Home</a>
+				<a href="/devskills">Dev Skills</a>
+			</div>
+			<h1>devskill #<%= devskillNum %></h1>
+			<h3><%= devskill.text %></h3>
+			<h3>Complete: <%= devskill.done ? 'Yes' : 'No' %></h3>
+		</div>
+	</body>
+</html>

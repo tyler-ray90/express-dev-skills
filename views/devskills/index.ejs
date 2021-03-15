@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dev Skills</title>
+	</head>
+	<body>
+		<!-- <div class="container"> -->
+			<!-- <div class="nav"> -->
+				<a>These are my Dev Skills</a>
+			<!-- </div> -->
+			<ul>
+				<% devskills.forEach(function(devskill, idx) { %>
+				<li>
+					<a href="/devskills/<%= idx %>"> <%= devskill.text %> </a>
+					- <%= devskill.done ? 'Done' : 'Not done' %>
+				</li>
+				<% }); %>
+			</ul>
+			<a href="/devskills/new">New Skill</a>
+			<!-- </div> -->
+	</body>
+</html>
